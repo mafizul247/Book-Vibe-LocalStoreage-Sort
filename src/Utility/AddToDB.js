@@ -26,7 +26,7 @@ const addToStoredDB = (id, addData) => {
         Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: `Book already add to ${addData}`
+            text: `Book already added in ${addData === "readList" ? "read list" : "white list"} item`
         });
     } else {
         storedBookData.push(id);
@@ -35,7 +35,7 @@ const addToStoredDB = (id, addData) => {
         Swal.fire({
             position: "center",
             icon: "success",
-            title: `Book has been ${addData}`,
+            title: `Book has been ${addData === "readList" ? "read list" : "white list"} item`,
             showConfirmButton: false,
             timer: 1500
         });
