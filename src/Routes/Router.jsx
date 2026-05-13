@@ -4,6 +4,7 @@ import Home from '../pages/Home/Home';
 // import ErrorPage from '../pages/ErrorPage/ErrorPage';
 import DetailsBook from '../pages/Books/DetailsBook';
 import ReadList from '../pages/ReadList/ReadList';
+import MapGoogleApp from '../pages/GoogleMap/MapGoogleApp';
 
 const router = createBrowserRouter([
     {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
                     return res.json();
                 },
                 Component: ReadList
+            },
+            {
+                path: 'map',
+                element: <MapGoogleApp />
             }
         ]
     }

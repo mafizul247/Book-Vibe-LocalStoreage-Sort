@@ -28,13 +28,13 @@ const Header = () => {
             </NavLink>
 
             <NavLink
-                to="/read"
+                to="/map"
                 className={({ isActive }) =>
                     `font-medium transition hover:text-primary ${isActive ? "text-primary" : ""
                     }`
                 }
             >
-                Page to Read
+                Google Map
             </NavLink>
         </>
     );
@@ -99,8 +99,8 @@ const Header = () => {
             {/* Mobile Drawer Overlay */}
             <div
                 className={`fixed inset-0 bg-black/40 z-40 transition-opacity duration-300 lg:hidden ${open
-                        ? "opacity-100 visible"
-                        : "opacity-0 invisible"
+                    ? "opacity-100 visible"
+                    : "opacity-0 invisible"
                     }`}
                 onClick={() => setOpen(false)}
             ></div>
