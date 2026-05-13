@@ -25,6 +25,7 @@ const DetailsBook = () => {
 
     return (
         <div>
+                <title>{bookName}</title>
             <div className="flex justify-around items-center gap-12 my-12">
                 <h2 className="text-2xl font-bold">Book Details Information</h2>
                 <button className="cursor-pointer btn" onClick={() => navigate(-1)}> <FaArrowAltCircleLeft /> Back Home</button>

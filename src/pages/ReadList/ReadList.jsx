@@ -135,6 +135,7 @@ const ReadList = () => {
 
     return (
         <div className='my-8'>
+            <title>Book Vibe - Listed Books</title>
             <h2 className='text-2xl font-bold bg-gray-200 text-center p-4 rounded-md mb-4'>Books</h2>
 
             {/* Dropdown  */}
